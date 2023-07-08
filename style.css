@@ -1,0 +1,105 @@
+:root {
+    --background: #e1dfdf;
+    --content: #FFFFFF;
+    --sidebar-link: #6a8186;
+    --sidebar-link-hover: #c1c1c1;
+    --link: #44676E;
+    --sidebar-active: #36565d;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.site-sidebar {
+    position: sticky;
+    align-self: flex-start;
+    top: 60px;
+    overflow-y: auto;
+}
+
+.sidebar-menu {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    background-color: #d3d3d3;
+}
+
+.sidebar-menu a {
+    color: var(--sidebar-link);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.sidebar-menu a:hover {
+    background-color: var(--sidebar-link-hover);
+    color: #FFFFFF;
+}
+
+.sidebar-menu a:visited {
+    text-decoration: none;
+}
+
+.sidebar-menu a.selected {
+    color: var(--sidebar-active);
+    font-weight: 700;
+    border-bottom: var(--sidebar-active) solid 5px;
+}
+
+.sidebar-menu .web-title {
+    margin: 10px 0 10px 0;
+}
+
+h1 {
+    font-size: 2.625rem;
+}
+
+.container h1 {
+    font-size: 1.375rem;
+}
+
+.container {
+    background-color: var(--content);
+    width: 800px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0px 0px 20px 30px;
+    padding: 10px 30px 0 30px;
+    border: 2px #d0d0d0 solid;
+}
+
+.profile-image img {
+    height: 146px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
