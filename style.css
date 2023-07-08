@@ -10,11 +10,13 @@
 :root {
     --background: #e1dfdf;
     --content: #FFFFFF;
-    --sidebar-link: #6a8186;
-    --sidebar-link-hover: #c1c1c1;
+    --sidebar-link: #EAEDED;
+    --sidebar-link-hover: #363D44;
     --link: #44676E;
     --sidebar-active: #36565d;
     --resume-section: #8BA2B0;
+    --sidebar: #30363D;
+    --dates: #718C9E;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 .content {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 3.75rem;
     gap: 20px;
 }
 
@@ -36,7 +38,7 @@ body {
     position: sticky;
     align-self: flex-start;
     top: 60px;
-    overflow-y: auto;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -48,7 +50,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 4px;
-    background-color: #d3d3d3;
+    background-color: var(--sidebar);
 }
 
 .sidebar-menu a {
@@ -80,11 +82,13 @@ h1 {
     font-size: 2.625rem;
     margin-top: 1.25rem;
     margin-bottom: 1rem;
+    color: #000000;
 }
 
 .container h1 {
     font-size: 1.5rem;
     border-bottom: #ebe8e8 3px dotted;
+    color: #000000;
 }
 
 .container h2 {
@@ -108,6 +112,10 @@ h1 {
 
 .container div {
     margin-bottom: 1rem;
+}
+
+.date {
+    color: var(--dates);
 }
 
 ul {
@@ -138,11 +146,19 @@ p {
 .entry {
     width: 600px;
     height: fit-content;
+    line-height: 1.5;
 }
 
 .entry-subtitle {
     display: flex;
     justify-content: space-between;
+}
+
+.entry-duration {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
 }
 
 footer {
