@@ -6,4 +6,3 @@
 // function loadPage(pageName) {
 //     let panels = document.querySelectorAll('')
 // }
-
