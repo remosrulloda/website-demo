@@ -8,9 +8,7 @@
 }
 
 :root {
-    /* --background: #596E69; */
     --background: #36465D;
-    /* --background: #d3d0d0; */
     --container: #F5F5F5;
     --sidebar-link: #EAEDED;
     --sidebar-link-hover: #363D44;
@@ -21,6 +19,7 @@
     --dates: #718C9E;
     --contact-link: #97AAB0;
     --contact-link-hover: #52808f;
+    --project-link: #52808f;
 }
 
 body {
@@ -47,6 +46,13 @@ body {
     flex-direction: column;
     gap: 0.9375rem;
     padding-bottom: 1.25rem;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .sidebar-menu {
@@ -93,10 +99,15 @@ a:nth-child(4):hover {
     margin: 10px 0 10px 0;
 }
 
-h1 {
+.container h1 {
     font-size: 2.625rem;
     margin-top: 1.25rem;
     margin-bottom: 1rem;
+    color: #FFFFFFFF;
+}
+
+.site-sidebar h1 {
+    font-size: 2.625rem;
     color: #FFFFFFFF;
 }
 
@@ -181,6 +192,18 @@ p {
     text-decoration: underline;
 }
 
+.projects {
+    line-height: 1.5;
+}
+
+.project h3 {
+    font-size: 1.25rem;
+}
+
+.project a {
+    color: var(--project-link);
+}
+
 .project-image {
     width: 300px;
     height: 250px;
@@ -191,6 +214,7 @@ p {
 .project {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1.5rem;
 }
 
 .project-description {
