@@ -8,9 +8,10 @@
 }
 
 :root {
-    --background: #e1dfdf;
-    /* --background: #36465D; */
-    --content: #FFFFFF;
+    /* --background: #596E69; */
+    --background: #36465D;
+    /* --background: #d3d0d0; */
+    --container: #F5F5F5;
     --sidebar-link: #EAEDED;
     --sidebar-link-hover: #363D44;
     --link: #44676E;
@@ -96,7 +97,7 @@ h1 {
     font-size: 2.625rem;
     margin-top: 1.25rem;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #FFFFFFFF;
 }
 
 .container h1 {
@@ -115,7 +116,7 @@ h1 {
 }
 
 .container {
-    background-color: var(--content);
+    background-color: var(--container);
     width: 800px;
     border-radius: 5px;
     font-size: 1rem;
@@ -175,9 +176,25 @@ p {
     color: var(--contact-link);
 }
 
-.content a:hover {
+.container a:hover {
     color: var(--contact-link-hover);
     text-decoration: underline;
+}
+
+.project-image {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-description {
+    width: 400px;
 }
 
 footer {
